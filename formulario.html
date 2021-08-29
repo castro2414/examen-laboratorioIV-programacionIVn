@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title> FORMULARIO </title>
+
+	<style type="text/css">
+		*{font-family: arial;}
+
+		h1 {text-align: center;
+		font-size:1.2em;
+		text-decoration: underline;}
+		form{text-align: center;}
+
+		div{border-style: solid;
+			border-color: green;
+			border-width: 0.2em;
+			margin-top: 2em;
+			margin-left: 10em;
+			margin-right: 10em;}
+
+		</style>
+
+</head>
+
+<body>
+
+    <body bgcolor="naranjado">
+
+	<br>
+	<h1>LLENAR EL SIGUIENTE FORMULARIO</h1>
+	<h1>PARA RESERVAR MATRICULA</h1>
+	<br>
+	<form name="formulario">
+
+		<spam>NOMBRE</spam> <input type="text" id="Nombre" placeholder="Primer Nombre" maxlength="15">
+		<br>
+		<br>
+
+		<spam>APELLIDO</spam> <input type="text" id="apell" placeholder="Primer apellido" maxlength="15">
+		<br>
+		<br>
+
+		<spam> ID </spam> <input type="text" id="id" placeholder="# de identidad" maxlength="15">
+		<br>
+		<br>
+
+		<spam> SEXO: </spam>
+		<spam>FEMENINO </spam><input type="radio" id="femenino">
+		<spam>MASCULINO </spam><input type="radio" id="masculino">
+		<br>
+		<br>
+		<input type="button" onclick="activar()" value="enviar">
+	</form>
+	<script>
+		function activar(){
+			var nomb = document.getElementById("nombre").value;
+			if(nomb=="")
+		{alert("escriba su nombre");return;}
+	var  apell =document.getElementById("apell").value;
+	if (apell=="") 
+		{alert("Escriba su apellido");
+	return;}
+	var  id =document.getElementById("id").value;
+	if (id=="") 
+		{alert("escriba su# de identidad");
+	return;}
+	var sex =document.getElementById("femenino");
+	var sexm =document.getElementById("masculino");
+	return;
+    }
+</script>
+
+</body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+              (c) Todos los derechos reservados Diseñado por <a href="mailto: oc2113541@gmail.com" class="email"> OSCAR ORLANDO ANTÚNEZ CASTRO, SECCIÓN 3, 12 AVO INFORMÁTICA, IHER</a>-2021
+        </p>
+
+
+<ul>
+
+<li><a href="index.html"> PÁGINA PRINCIPAL </a>
+
+</ul>
+
+
+
+</html>
